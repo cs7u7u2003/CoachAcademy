@@ -2,6 +2,7 @@
 using Microsoft.OpenApi.Models;
 using System.Data.SqlClient;
 using System.Data;
+using CoachAcademyApi.Utils;
 
 public class Startup
 {
@@ -42,6 +43,8 @@ public class Startup
     {
         services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         services.AddScoped<IUsuarioService, UsuarioService>();
+        services.AddScoped<IPermisoRepository, PermisoRepository>();
+        services.AddScoped<ErrorLogger>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
