@@ -24,5 +24,6 @@ public class ErrorLogger
             parameters,
             commandType: CommandType.StoredProcedure);
     }
+
 }
 

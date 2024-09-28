@@ -39,6 +39,7 @@ public class UsuarioService : IUsuarioService
             }
             else
             {
+                await _errorLogger.LogErrorAsync("Usuario no encontrado.", "Usuario no encontrado.", nameof(UsuarioService), nameof(GetUsuarioAsync));
                 return new OkObjectResult(new { message = "Usuario no encontrado." });
             }
         }

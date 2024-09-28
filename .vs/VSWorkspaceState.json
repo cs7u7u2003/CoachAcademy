@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CoachAcademyApi"
+    "\\CoachAcademyApi",
+    "\\CoachAcademyApi\\Services"
   ],
+  "SelectedNode": "\\CoachAcademyApi\\Services\\UsuarioService.cs",
   "PreviewInSolutionExplorer": false
 }
